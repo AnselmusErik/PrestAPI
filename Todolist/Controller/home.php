@@ -14,7 +14,7 @@ $result = getTasks($mahasiswa_id);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todolist <?php echo $nama; ?></title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../Views/Home/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -57,9 +57,9 @@ $result = getTasks($mahasiswa_id);
                 </li>
             <?php endwhile; ?>
         </ul>
-        <a href="../Login/logout.php" class="logout-button"><i class="fa-sharp fa-solid fa-right-from-bracket"></i> Logout</a>
+        <a href="logout.php" class="logout-button"><i class="fa-sharp fa-solid fa-right-from-bracket"></i> Logout</a>
     </div>
-    <script src="home.js"></script>
+    <script src="../Views/Home/home.js"></script>
 </body>
 
 </html>
