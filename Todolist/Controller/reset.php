@@ -20,7 +20,7 @@ if (isset($_POST["submit"])) {
         $result = mysqli_query($db, $query);
         if ($result) {
             // Alihkan ke halaman login
-            header("Location: ../Login/login.php");
+            header("Location: login.php");
             exit;
         } else {
             $error = "Gagal mereset password!";
@@ -31,8 +31,6 @@ if (isset($_POST["submit"])) {
 }
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +38,7 @@ if (isset($_POST["submit"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reset Password Mahasiswa</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../Views/Reset/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -65,12 +63,12 @@ if (isset($_POST["submit"])) {
         <button type="submit" name="submit">Reset Password</button>
 
         <!-- untuk membuat link dengan ikon -->
-        <a href="../Login/login.php" style="display: block; margin-top: 5px; margin-left: 175px;">
+        <a href="login.php" style="display: block; margin-top: 5px; margin-left: 175px;">
             <i class="fas fa-arrow-left"></i></a>
     </form>
 
 
 </body>
-<script src="reset.js"></script>
+<script src="../Views/Reset/reset.js"></script>
 
 </html>
